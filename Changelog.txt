@@ -1,0 +1,65 @@
+v6.5
+----
+- Option to update date for an entry added in Correct Update page 
+- removed border in correct page
+- added Backup option in settings page. backup saved as sql, contains table structure and insert queries for all records
+Note-the default file path must be changed in changecmp.jsp
+- [FIXED]from date > to date no error shown
+- [FIXED]If range selected and delete all clicked, even dates in that month which are not displayed are deleted
+- [FIXED]If a book no is in 2 dates, then delete all deletes records for all dates
+- messages updated to show date/range if any
+- [FIXED] IE update record failure bcos of NPE. removed form element in date js
+- tested in IE,FF,Chrome all issues resolved
+-[IGNORED] asc/desc order for reports
+-[IGNORED] printing only selected date entries
+-[IGNORED] Restore option, restore can be done manually after creating table and running the insert scripts
+
+v6.4
+----
+-added cellpadding/cellspacing removed borders
+-changed colors of table titles, font sizes
+- changed main company /date size
+-changed summary page to show total by month and record grouping by month
+- added delete all to correct page to delete all entries for a book no
+-summary page DELETE ALL entries for a month
+-summary page PRINT date working
+-Changed delete message on summary page to disp correct date
+-old summary page made compatible
+--summary page Print by month working for all/range
+--summary page print summary pdf changed
+--range date maintained across all actions on summary page
+-- sometimes "null" string appears in params in jsp
+--messages updated to show book no/bill no 
+
+v6.3
+------
+-update billno/book no
+-works perfectly in ie,ff,chrome
+- checked compatibility in ie7/8/9
+- [FIXED]update a record and goto summary page, date changes to current date
+- Range default date is today
+- No records found in report page
+- alignment of range date boxes proper in all browsers
+-print out font as expected [changed in 6.2.a]
+
+6.2.a
+-----
+Print report bill no disp on 2 lines, blno col size 6->7, 5% 17->16
+
+6.2
+------
+Reverted from dot matrix font to old font, changed the font sizes by 1
+reduced no of lines from 47 to 45
+converted all strings to constants
+
+6.1
+-------
+adjusted printer margins
+reduced font by 1 pt for report option
+values 999999 printed without going to next line in pdf
+changed rows/page from 42 to 49
+
+6.0
+----------
+removed 12.5%, 4 %
+changed font to dotmatrix
